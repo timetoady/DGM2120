@@ -31,18 +31,27 @@ header {
 @media (max-width: 61.25em) {
     html {
         font-size: 80%;
+        
+    }
+    #thetagline{
+        margin-left: 8rem;
+        max-width: 80%;
     }
 }
-/* The following media is smartphone sized, so it needs the most changes. */
+/* The following media is smartphone sized, so it needs the most changes, especially the nav. */
 @media (max-width: 28.75em) {
     html {
         font-size: 75%;
        
     }
     nav {
-        width: 100%;
+        width: 100vw;
         margin-top: 0rem;
         align-items: center;
+        border: silver;
+        border-top-style: dotted;
+        border-bottom-style: dotted;
+        border-width: 1pt;
         
         
     }
@@ -68,7 +77,9 @@ header {
     font-size: 1rem;
     
     }
-    .tagline{
+    #thetagline{
+        margin-left: 3rem;
+        max-width: 80%;
         font-size: 1rem;
         text-align: center;
     }
@@ -96,10 +107,11 @@ dt{
 
 }
 dl{
-   font-size: 1.4rem; 
+   font-size: 1.4rem;
+   margin: 2rem; 
 }
 h1 {
-    margin: o;
+    margin: 0;
     color: #E6000F;
     font-family: 'Michroma', sans-serif;
     font-size: 3.8rem;
@@ -112,7 +124,7 @@ nav {
 }
 h2 {
     font-family: 'Michroma', sans-serif;
-    font: smaller, bold;
+    font: smaller;
     margin: 0px 0px 20px 0px;
     padding: 0px;
     font-size: 1.9rem
@@ -200,5 +212,5 @@ a.tagline:visited{
 }
 
 .othersites{
-    list-style: none !important;
+    list-style: decimal !important;
 }
