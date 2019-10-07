@@ -236,7 +236,7 @@ a.navlist:visited {
 
 .frontpageimage {
   align-items: right;
-  max-width: 20rem;
+  width: 100%;
 }
 #tetris {
   max-width: 20rem;
