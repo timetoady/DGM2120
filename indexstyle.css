@@ -1,6 +1,5 @@
 * {
   margin: 0px;
-  
 }
 
 html {
@@ -10,7 +9,6 @@ html {
   color: white;
   font-size: 100%;
   margin: 0;
-  
 }
 
 header {
@@ -21,14 +19,14 @@ header {
 
 /* Here I'll put all the media specifications: */
 
-@media (max-width: 2505px){
-  #galleryfigdiv{
+@media (max-width: 2505px) {
+  #galleryfigdiv {
     max-width: 750vw;
   }
 }
 
-@media (min-width: 2688px){
-  body{
+@media (min-width: 2688px) {
+  body {
     max-width: 2600px;
     margin: 0 auto !important;
     float: none !important;
@@ -48,7 +46,6 @@ header {
     margin-left: 8rem;
     max-width: 80%;
   }
-  
 }
 /* The following media is smartphone sized, so it needs the most changes, especially the nav. */
 @media (max-width: 28.75em) {
@@ -79,16 +76,15 @@ header {
     position: fixed;
   }
 
-#logo{
-  font-size: 1rem !important;
-}
-.title {
+  #logo {
+    font-size: 1rem !important;
+  }
+  .title {
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 5rem 0rem 0rem -0.5rem;
     font-size: 1rem;
-    
   }
   #thetagline {
     margin-left: 3rem;
@@ -99,8 +95,7 @@ header {
 
   #intro,
   #overview,
-  #guide
-  {
+  #guide {
     margin: 1rem;
   }
   #tetrisfigure,
@@ -112,7 +107,6 @@ header {
   #galleryfigdiv {
     max-width: 100vw;
     margin-left: -38px;
-    
   }
   #gallery1 {
     margin: 0.5rem;
@@ -149,10 +143,13 @@ h1 {
   position: fixed !important;
   font-size: 1.3rem;
 }
-a.navbar:visited {
+.thenav a:visited {
   text-decoration: none;
   font-weight: normal;
-  color: aliceblue !important;
+  color: aliceblue;
+}
+.thenav a:hover {
+  color: #4e51f3;
 }
 h2 {
   font-family: "Michroma", sans-serif;
@@ -203,7 +200,7 @@ body {
   margin: 2rem 7rem 1rem 10rem;
 }
 
-body{
+body {
   max-width: 2489px;
 }
 
@@ -273,9 +270,9 @@ figcaption {
   font-size: 1rem;
   font-style: italic;
   max-width: 100%;
-  margin-top: -2rem;
+  margin-top: -2.5rem;
   background-color: #e6000f;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Gallery information */
@@ -291,19 +288,19 @@ figcaption {
   align-items: center;
   align-self: center;
   min-width: 25vw;
-  margin: 2rem;
+  min-height: 3rem;
+  margin: 1rem;
   border-style: double;
-  
+  /* object-fit: cover; */
 }
 
 .gallerydiv {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: auto;
   width: 100%;
   max-width: 80vw;
   margin: 0 auto;
-  
 }
 
 .galleryimg {
@@ -319,5 +316,7 @@ figcaption {
   padding: 0.5rem;
   font-size: 1rem;
   font-style: normal;
-  margin-top: -2rem;
+  /* margin-top: -3rem; */
+  
+  
 }
