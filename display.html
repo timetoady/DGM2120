@@ -15,86 +15,171 @@
   <body>
     <!-- Later, this title will probably be replaced by an Illistrator-drawn logo instead. -->
     <div id="page-container">
-        <div id="content-wrap">
-    <header>
-      <nav id="navbar" class="thenav">
-        <ul id="navlist" class="nav-list">
-          <li><a href="index.html">TTGames</a></li>
-          <li><a href="collect.html">Collect</a></li>
-          <li><a href="preserve.html">Preserve</a></li>
-          <li><a href="display.html">Display</a></li>
-          <li><a href="play.html">Play</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
-      <div id="logo">
-        <a href="index.html" id="top" class="title"
-          ><h1>TimeToady Gaming</h1></a
-        >
-        <a href="index.html" class="tagline" id="thetagline"
-          ><h2>A road to gaming in the old school</h2></a
-        >
-      </div>
-    </header>
+      <div id="content-wrap">
+        <header>
+          <nav id="navbar" class="thenav">
+            <ul id="navlist" class="nav-list">
+              <li><a href="index.html">TTGames</a></li>
+              <li><a href="collect.html">Collect</a></li>
+              <li><a href="preserve.html">Preserve</a></li>
+              <li><a href="display.html">Display</a></li>
+              <li><a href="play.html">Play</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+          <div id="logo">
+            <a href="index.html" id="top" class="title"
+              ><h1>TimeToady Gaming</h1></a
+            >
+            <a href="index.html" class="tagline" id="thetagline"
+              ><h2>A road to gaming in the old school</h2></a
+            >
+          </div>
+        </header>
 
-    <main>
-      <section id="form1" class="meat">
-        <h1>Display</h1>
-        <p>Nearly every collector likes to show off how they show off their 
-          hard-won spoils. Gaming collections are especialy prone to this kind
-         of grandstanding. So instead of me just blowing my horn, below I offer 
-         you the chance to talk about your style!</p>
-      <form action="thanks.html" method="POST" enctype="multipart/form-data" name="formA" class="form1">
-        <fieldset>
-          <legend>Your info</legend>
-        <label><span>Name or screen name (required):</span><input name="first" value="" type="text" placeholder="Mr. AwesomeSauce" required class="infoInput"></label>
-        <label><span>Lucky number: </span><input type="number" name="luckynumber" value="" class="infoInput"></label>
-       </fieldset>
-       <fieldset>
-         <legend>Your Contact</legend>
-        <label><span>Email (required):  </span><input type="email" name="Email" value="" class="infoInput" required></label>
-        <label><span>Phone: </span><input type="tel" name="telephone" value="" class="infoInput" pattern="[0-9-. ]{10,14}"></label>
-        <label><span>Social media profile: </span><input type="url" name="socialMedia" value="" class="infoInput"></label>
-      </fieldset>
-      <fieldset>
-        <legend>Your retro style</legend>
-      <span>CRT, retrobox, and/or upscaler?</span>
-      <label><input type="checkbox" name="ups" value="Upscaler"> Upscaler</label>
-      <label><input type="checkbox" name="CRT" value="CRT TV"> CRT</label>
-      <label><input type="checkbox" name="retro" value="retrobox"> Retrobox (i.e. Raspberry Pie, Classic/Mini system, etc)</label>
-      <span>Nintendo kid, Sega kid, or rich/parents owned a game store?</span>
-      <label><input type="radio" name="gamertype" value="nitendude"> Nintendo Power, baby!</label>
-      <label><input type="radio" name="gamertype" value="seguy"> <em>Seeee</em>gaaaa!</label>
-      <label><input type="radio" name="gamertype" value="richStore"> Cha<em>ching!</em>/had 'em all in a 10 ft sq back room!</label>
-      <label><input type="radio" name="gamertype" value="atariEtc"> Sega? Nintendo? Kid stuff. I'm a first-gen gamer, bro.</label>
-      <label><input type="radio" name="gamertype" value="pc"> GLORY TO THE PC GAMING RAAAAACE!</label>
-      </fieldset>
-      <fieldset>
-        <legend>Your gamer story/how you display your colletion? (required) </legend>
-        <textarea name="yourStory" class="storyText" required>
-      </textarea> 
-    </fieldset>
-     <span>Are you an RGB enthusiast?</span>
-      <select name="rgb" class="selector">
-        <option>Heck yeah. SCART and PVM for the win!</option>
-        <option>Yessir. Nothing better than that RGB goodness to an upscaler.</option>
-        <option>My Retro-pie / mini classics get me my retro fix just fine.</option>
-        <option>Uh, whut?</option>
-      </select>
-    
-    <input type="hidden" name="ttgames" value="blueHost">
-      <span><input type="submit" name="submit" value="Submit!!" class="submitButton"></span>
-      
+        <main>
+          <section id="form1" class="meat">
+            <h1>Display</h1>
+            <p>
+              Nearly every collector likes to show off how they show off their
+              hard-won spoils. Gaming collections are especialy prone to this
+              kind of grandstanding. So instead of me just blowing my horn,
+              below I offer you the chance to talk about your style!
+            </p>
+            <form
+              action="thanks.html"
+              method="POST"
+              enctype="multipart/form-data"
+              name="formA"
+              class="form1"
+            >
+              <fieldset>
+                <legend>Your info</legend>
+                <label
+                  ><span>Name or screen name (required):</span
+                  ><input
+                    name="first"
+                    value=""
+                    type="text"
+                    placeholder="Mr. AwesomeSauce"
+                    required
+                    class="infoInput"
+                /></label>
+                <label
+                  ><span>Lucky number: </span
+                  ><input
+                    type="number"
+                    name="luckynumber"
+                    value=""
+                    class="infoInput"
+                /></label>
+              </fieldset>
+              <fieldset>
+                <legend>Your Contact</legend>
+                <label
+                  ><span>Email (required): </span
+                  ><input
+                    type="email"
+                    name="Email"
+                    value=""
+                    class="infoInput"
+                    required
+                /></label>
+                <label
+                  ><span>Phone: </span
+                  ><input
+                    type="tel"
+                    name="telephone"
+                    value=""
+                    class="infoInput"
+                    pattern="[0-9-. ]{10,14}"
+                /></label>
+                <label
+                  ><span>Social media profile: </span
+                  ><input
+                    type="url"
+                    name="socialMedia"
+                    value=""
+                    class="infoInput"
+                /></label>
+              </fieldset>
+              <fieldset>
+                <legend>Your retro style</legend>
+                <span>CRT, retrobox, and/or upscaler?</span>
+                <label
+                  ><input type="checkbox" name="ups" value="Upscaler" />
+                  Upscaler</label
+                >
+                <label
+                  ><input type="checkbox" name="CRT" value="CRT TV" />
+                  CRT</label
+                >
+                <label
+                  ><input type="checkbox" name="retro" value="retrobox" />
+                  Retrobox (i.e. Raspberry Pie, Classic/Mini system, etc)</label
+                >
+                <span
+                  >Nintendo kid, Sega kid, or rich/parents owned a game
+                  store?</span
+                >
+                <label
+                  ><input type="radio" name="gamertype" value="nitendude" />
+                  Nintendo Power, baby!</label
+                >
+                <label
+                  ><input type="radio" name="gamertype" value="seguy" />
+                  <em>Seeee</em>gaaaa!</label
+                >
+                <label
+                  ><input type="radio" name="gamertype" value="richStore" />
+                  Cha<em>ching!</em>/had 'em all in a 10 ft sq back room!</label
+                >
+                <label
+                  ><input type="radio" name="gamertype" value="atariEtc" />
+                  Sega? Nintendo? Kid stuff. I'm a first-gen gamer, bro.</label
+                >
+                <label
+                  ><input type="radio" name="gamertype" value="pc" /> GLORY TO
+                  THE PC GAMING RAAAAACE!</label
+                >
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Your gamer story/how you display your colletion? (required)
+                </legend>
+                <textarea name="yourStory" class="storyText" required>
+                </textarea>
+              </fieldset>
+              <span>Are you an RGB enthusiast?</span>
+              <select name="rgb" class="selector">
+                <option>Heck yeah. SCART and PVM for the win!</option>
+                <option
+                  >Yessir. Nothing better than that RGB goodness to an
+                  upscaler.</option
+                >
+                <option
+                  >My Retro-pie / mini classics get me my retro fix just
+                  fine.</option
+                >
+                <option>Uh, whut?</option>
+              </select>
 
-      </form>
-    </section>
-  </main>
+              <input type="hidden" name="ttgames" value="blueHost" />
+              <span
+                ><input
+                  type="submit"
+                  name="submit"
+                  value="Submit!!"
+                  class="submitButton"
+              /></span>
+            </form>
+          </section>
+        </main>
       </div>
       <footer id="footer">
         TimeToady Gaming&copy; &bull; A site by Adam Andreason &bull; September
         2019. &bull; Only for fun.
       </footer>
-    
-      </div>
+    </div>
   </body>
 </html>
