@@ -52,6 +52,17 @@ header {
     margin-left: 8rem;
     max-width: 80%;
   }
+  form.form1 fieldset {
+    width: 70vw;
+  }
+  form.form1 .infoInput {
+    width: 90%;
+    min-width: 50%;
+  }
+
+  #rgb {
+    max-width: 50%;
+  }
 }
 /* The following media is smartphone sized, so it needs the most changes, especially the nav. */
 @media (max-width: 28.75em) {
@@ -120,6 +131,25 @@ header {
   }
   #footer {
     color: white;
+  }
+
+  form.form1 fieldset {
+    width: 80vw;
+    margin-left: 0rem;
+    align-items: center;
+  }
+  form.form1 .infoInput,
+  form.form1 .storyText {
+    width: 95%;
+    min-width: 80%;
+  }
+
+  #form1 {
+    margin: 1rem 2rem 1rem 2rem;
+    align-items: center;
+  }
+  form.form1 legend {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -325,6 +355,8 @@ figcaption {
 #page-container {
   position: relative;
   min-height: 100vh;
+  max-width: 1900px;
+  
 }
 
 #content-wrap {
@@ -346,32 +378,41 @@ form.form1 fieldset {
   border: 1px solid #4e51f3;
   border-radius: 1rem;
   padding: 1rem 2%;
+  margin-top: 1rem;
+  max-width: 90%;
+  
 }
 
 form.form1 legend {
   font-size: 0.8rem;
   color: #e6000f;
+  max-width: 80%;
 }
 form.form1 label {
   display: block;
+  
 }
 
 form.form1 span {
   display: block;
   padding-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: #96846b;
 }
 
 form.form1 .infoInput {
   font-weight: 600;
   border-radius: 1rem;
   width: 30%;
+  background-color: aliceblue;
+  color: #333333
 }
 
 form.form1 .storyText {
-  width: 70%;
+  width: 65%;
   height: 4rem;
   border-radius: 1rem;
+  margin: 0px;
 }
 
 form.form1 .submitButton {
@@ -381,5 +422,9 @@ form.form1 .submitButton {
   font-size: 1rem;
   border: 1px dashed aliceblue;
   border-radius: 1rem;
-  margin-top: 0.5rem
+  margin-top: 0.5rem;
+}
+
+form.form1 .selector {
+  max-width: 80%;
 }
