@@ -355,6 +355,8 @@ figcaption {
 #page-container {
   position: relative;
   min-height: 100vh;
+  max-width: 1900px;
+  
 }
 
 #content-wrap {
@@ -378,6 +380,7 @@ form.form1 fieldset {
   padding: 1rem 2%;
   margin-top: 1rem;
   max-width: 90%;
+  
 }
 
 form.form1 legend {
@@ -387,6 +390,7 @@ form.form1 legend {
 }
 form.form1 label {
   display: block;
+  
 }
 
 form.form1 span {
@@ -400,13 +404,14 @@ form.form1 .infoInput {
   font-weight: 600;
   border-radius: 1rem;
   width: 30%;
+  background-color: aliceblue;
+  color: #333333
 }
 
 form.form1 .storyText {
   width: 65%;
   height: 4rem;
   border-radius: 1rem;
-  border: 
   margin: 0px;
 }
 
