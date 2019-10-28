@@ -5,7 +5,6 @@
 html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  background-color: #000000;
   color: white;
   font-size: 100%;
   margin: 0;
@@ -63,7 +62,7 @@ header {
     margin-top: 0rem;
     align-items: center;
     border: silver;
-    border-top-style: dotted;
+    border-top-style: none;
     border-bottom-style: dotted;
     border-width: 1pt;
     position: fixed !important;
@@ -73,13 +72,23 @@ header {
     justify-content: space-around;
     align-items: center;
     background: rgb(230, 0, 15);
-    width: 95%;
+    width: 99%;
     text-align: center;
     margin: 0rem 1rem 0rem 0rem !important;
     line-height: 0rem !important;
     font-family: "Roboto", sans-serif !important;
-    padding: 2rem 3rem 2rem 0rem !important;
+    padding: 1rem 1rem 1rem 0.5rem !important;
     position: fixed;
+  }
+
+  .nav-list li{
+    border: 1.5px solid #4e51f3;
+    padding: .5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    margin-right: 3px;
+    line-height: 1.5rem;
   }
 
   #logo {
@@ -112,8 +121,8 @@ header {
   }
   #galleryfigdiv {
     max-width: 100vw;
-    margin-left: -38px;
-    margin-bottom: 400px;
+    margin-left: -10px;
+    margin-bottom: 400px; 
   }
   #gallery1 {
     margin: 0.5rem;
@@ -181,8 +190,11 @@ p {
 }
 
 body {
-  max-width: 100%;
+  background-image: url(assets/background2.gif);
+  background-color: #140207;
+  background-repeat: repeat-x;
   margin: 0px;
+
 }
 
 .nav-list {
@@ -320,15 +332,19 @@ figcaption {
   bottom: -3rem;
 }
 
-/* Keeping the footer down */
+/* Keeping the footer down, wrapper */
 
 #page-container {
   position: relative;
   min-height: 100vh;
+  max-width: 1500px;
+  min-width: 200px;
+  margin: 0 auto;
 }
 
 #content-wrap {
   padding-bottom: 5rem; /* Footer height */
+
 }
 
 #footer {
