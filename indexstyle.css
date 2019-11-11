@@ -24,14 +24,14 @@ header {
 .ul1 li {
   list-style-type: none;
   background: url(./assets/Play.png) top left no-repeat;
-  background-size: 30px;
+  background-size: 20px;
   padding-left: 40px;
 }
 
 #collectList li {
   list-style-type: none;
   background: url(./assets/Collect.png) left no-repeat;
-  background-size: 30px;
+  background-size: 20px;
   padding-left: 40px;
 }
 
@@ -142,6 +142,8 @@ header {
   #logopic {
     margin-top: 2rem;
     width: 25rem;
+    align-items: center;
+    margin-right: 1rem;
   }
   .title {
     text-align: center;
@@ -156,6 +158,10 @@ header {
     font-size: 1rem;
     text-align: center;
   }
+
+#tetris{
+  align-items: center;
+}
 
   #intro,
   #overview,
