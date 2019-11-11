@@ -24,7 +24,7 @@ header {
 .ul1 li {
   list-style-type: none;
   background: url(./assets/Play.png) top left no-repeat;
-  background-size: 20px;
+  background-size: 30px;
   padding-left: 40px;
 }
 
@@ -36,7 +36,7 @@ header {
 }
 
 /* Here I'll put all the media specifications: */
-
+/* Some fixes for ultra wide screens */
 @media (max-width: 2505px) {
   #galleryfigdiv {
     max-width: 750vw;
@@ -61,7 +61,7 @@ header {
     font-size: 90%;
   }
 }
-
+/*Tablet sized*/
 @media (max-width: 61.25em) {
   html {
     font-size: 80%;
@@ -118,10 +118,9 @@ header {
     background-color: black;
     margin-right: 3px;
     line-height: 1.5rem;
-
   }
 
-  .nav-list li a:focus{
+  .nav-list li a:focus {
     background-color: grey;
   }
   #form1 {
@@ -159,9 +158,9 @@ header {
     text-align: center;
   }
 
-#tetris{
-  align-items: center;
-}
+  #tetris {
+    align-items: center;
+  }
 
   #intro,
   #overview,
@@ -173,20 +172,19 @@ header {
     align-items: center;
     float: none;
     margin: 2rem 3rem 1rem 1rem;
+    box-shadow: none;
   }
   #galleryfigdiv {
     width: 250px;
     margin: 0;
-    /* margin-bottom: 400px; */
   }
-  #galleryfigdiv img{
+  #galleryfigdiv img {
     width: 100%;
   }
 
   #galleryfigdiv figure {
     width: 87%;
   }
-  
 
   #gallery1 {
     margin: 0.5rem;
@@ -308,7 +306,6 @@ a:hover {
 
 a:active {
   color: #e6000f;
-  
 }
 
 #tagline {
@@ -344,6 +341,7 @@ a.navlist:visited {
 
 .frontpageimage {
   width: 20rem;
+  box-shadow: 2px 6px 15px red;
 }
 #tetris {
   max-width: 20rem;
@@ -471,15 +469,15 @@ form.form1 .submitButton {
   margin-top: 0.5rem;
 }
 
-.thenav a:focus{
+.thenav a:focus {
   background-color: rgb(114, 114, 114);
 }
 
 .thenav a:active {
   background-color: rgb(114, 114, 114);
-  color: red
+  color: red;
 }
 
-#selector{
+#selector {
   width: 300px;
 }
