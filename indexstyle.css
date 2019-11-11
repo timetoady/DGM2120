@@ -14,10 +14,25 @@ header {
   margin: 0px;
   padding: 1px;
   max-width: 100%;
+  background-size: 20px;
+  background-image: url(./assets/headerBack2.jpg);
+}
+#logopic {
+  width: 39rem;
 }
 
-#logopic{
-  width: 39rem;
+.ul1 li {
+  list-style-type: none;
+  background: url(./assets/Play.png) top left no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+}
+
+#collectList li {
+  list-style-type: none;
+  background: url(./assets/Collect.png) left no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
 }
 
 /* Here I'll put all the media specifications: */
@@ -55,6 +70,15 @@ header {
     margin-left: 8rem;
     max-width: 80%;
   }
+
+  #form1 {
+    min-width: 50%;
+    padding: 1rem;
+  }
+
+  #form1 .infoInput {
+    width: 50%;
+  }
 }
 /* The following media is smartphone sized, so it needs the most changes, especially the nav. */
 @media (max-width: 28.75em) {
@@ -72,12 +96,11 @@ header {
     position: fixed !important;
   }
 
-
   .nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgb(230, 0, 15);
+    background: linear-gradient(black, red, black);
     width: 99%;
     text-align: center;
     margin: 0rem 1rem 0rem 0rem !important;
@@ -87,14 +110,28 @@ header {
     position: fixed;
   }
 
-  .nav-list li{
+  .nav-list li {
     border: 1.5px solid #4e51f3;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     font-size: 1rem;
     background-color: black;
     margin-right: 3px;
     line-height: 1.5rem;
+
+  }
+
+  .nav-list li a:focus{
+    background-color: grey;
+  }
+  #form1 {
+    min-width: 50%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #form1 .infoInput {
+    width: 80%;
   }
 
   #logo {
@@ -102,7 +139,7 @@ header {
     margin-top: 4rem;
   }
 
-  #logopic{
+  #logopic {
     margin-top: 2rem;
     width: 25rem;
   }
@@ -132,10 +169,19 @@ header {
     margin: 2rem 3rem 1rem 1rem;
   }
   #galleryfigdiv {
-    max-width: 100vw;
-    margin-left: -10px;
-    margin-bottom: 400px; 
+    width: 250px;
+    margin: 0;
+    /* margin-bottom: 400px; */
   }
+  #galleryfigdiv img{
+    width: 100%;
+  }
+
+  #galleryfigdiv figure {
+    width: 87%;
+  }
+  
+
   #gallery1 {
     margin: 0.5rem;
   }
@@ -152,6 +198,10 @@ ul {
 
 ol {
   font-size: 1.2rem;
+}
+
+blockquote {
+  background: linear-gradient(black, red, black);
 }
 
 dt {
@@ -173,6 +223,7 @@ h1 {
   list-style: none;
   position: fixed !important;
   font-size: 1.3rem;
+  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.719);
 }
 .thenav a:visited {
   text-decoration: none;
@@ -181,7 +232,9 @@ h1 {
 }
 .thenav a:hover {
   color: #4e51f3;
+  text-shadow: none;
 }
+
 h2 {
   font-family: "Michroma", sans-serif;
   font: smaller;
@@ -206,7 +259,6 @@ body {
   background-color: #140207;
   background-repeat: repeat-x;
   margin: 0px;
-
 }
 
 .nav-list {
@@ -250,6 +302,7 @@ a:hover {
 
 a:active {
   color: #e6000f;
+  
 }
 
 #tagline {
@@ -356,7 +409,7 @@ figcaption {
 
 #content-wrap {
   padding-bottom: 5rem; /* Footer height */
-
+  box-shadow: 2px 1px 5px rgba(255, 0, 0, 0.404);
 }
 
 #footer {
@@ -409,5 +462,18 @@ form.form1 .submitButton {
   font-size: 1rem;
   border: 1px dashed aliceblue;
   border-radius: 1rem;
-  margin-top: 0.5rem
+  margin-top: 0.5rem;
+}
+
+.thenav a:focus{
+  background-color: rgb(114, 114, 114);
+}
+
+.thenav a:active {
+  background-color: rgb(114, 114, 114);
+  color: red
+}
+
+#selector{
+  width: 300px;
 }
