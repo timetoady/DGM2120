@@ -164,7 +164,7 @@ header {
 
   #intro,
   #overview,
-  #guide {
+  #guide,  {
     margin: 1rem;
   }
   #tetrisfigure,
@@ -191,6 +191,9 @@ header {
   }
   #footer {
     color: white;
+  }
+  #mapFrame, #videoFrame{
+    margin: 0;
   }
 }
 
@@ -480,4 +483,10 @@ form.form1 .submitButton {
 
 #selector {
   width: 300px;
+}
+/* Here for iframe setup */
+.framed{
+  width:100%;
+  height: 20rem;
+  margin: 0 auto;
 }
