@@ -17,6 +17,7 @@ header {
   background-size: 20px;
   background-image: url(./assets/headerBack2.jpg);
 }
+
 #logopic {
   width: 39rem;
 }
@@ -41,6 +42,10 @@ header {
   #galleryfigdiv {
     max-width: 750vw;
   }
+
+  .mobileHeading {
+    margin-left: 10rem;
+  }
 }
 
 @media (min-width: 2688px) {
@@ -49,23 +54,31 @@ header {
     margin: 0 auto !important;
     float: none !important;
   }
+
   #galleryfigdiv {
     grid-template-columns: repeat(auto-fit, minmax(450px, 0.7fr));
     grid-gap: 2%;
     width: 100%;
     margin: 0 auto;
   }
+
+  .mobileHeading {
+    margin-left: 10rem;
+  }
 }
+
 @media (max-width: 75em) {
   html {
     font-size: 90%;
   }
 }
+
 /*Tablet sized*/
 @media (max-width: 61.25em) {
   html {
     font-size: 80%;
   }
+
   #thetagline {
     margin-left: 8rem;
     max-width: 80%;
@@ -80,11 +93,17 @@ header {
     width: 50%;
   }
 }
+
 /* The following media is smartphone sized, so it needs the most changes, especially the nav. */
 @media (max-width: 28.75em) {
   html {
     font-size: 72%;
   }
+
+  #themain {
+    margin: 1rem;
+  }
+
   nav {
     width: 100%;
     margin-top: 0rem;
@@ -123,6 +142,7 @@ header {
   .nav-list li a:focus {
     background-color: grey;
   }
+
   #form1 {
     min-width: 50%;
     margin: 0;
@@ -144,6 +164,7 @@ header {
     align-items: center;
     margin-right: 1rem;
   }
+
   .title {
     text-align: center;
     display: flex;
@@ -151,6 +172,7 @@ header {
     margin: 5rem 0rem 0rem -0.5rem;
     font-size: 1rem;
   }
+
   #thetagline {
     margin-left: 3rem;
     max-width: 80%;
@@ -164,9 +186,10 @@ header {
 
   #intro,
   #overview,
-  #guide,  {
+  #guide {
     margin: 1rem;
   }
+
   #tetrisfigure,
   #topimage {
     align-items: center;
@@ -174,10 +197,12 @@ header {
     margin: 2rem 3rem 1rem 1rem;
     box-shadow: none;
   }
+
   #galleryfigdiv {
     width: 250px;
     margin: 0;
   }
+
   #galleryfigdiv img {
     width: 100%;
   }
@@ -187,13 +212,27 @@ header {
   }
 
   #gallery1 {
-    margin: 0.5rem;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 100% !important;
   }
+
   #footer {
     color: white;
   }
-  #mapFrame, #videoFrame{
-    margin: 0;
+
+  #mapFrame,
+  #videoFrame {
+    width: 100%;
+  }
+
+  .meat {
+    margin: 0 auto !important;
+
+  }
+
+  .mobileHeading {
+    margin-left: 2rem;
   }
 }
 
@@ -216,27 +255,32 @@ dt {
   font-family: "Michroma", sans-serif;
   margin: 2rem 0rem 1rem 0rem;
 }
+
 dl {
   font-size: 1.4rem;
   margin: 2rem;
 }
+
 h1 {
   margin: 0;
   color: #e6000f;
   font-family: "Michroma", sans-serif;
   font-size: 3.8rem;
 }
+
 #navbar {
   list-style: none;
   position: fixed !important;
   font-size: 1.3rem;
   text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.719);
 }
+
 .thenav a:visited {
   text-decoration: none;
   font-weight: normal;
   color: aliceblue;
 }
+
 .thenav a:hover {
   color: #4e51f3;
   text-shadow: none;
@@ -256,6 +300,7 @@ blockquote {
   padding: 1rem;
   border-style: dashed;
 }
+
 p {
   margin: 2rem 1rem 2rem 1rem;
   font-size: 1.5rem;
@@ -290,7 +335,7 @@ body {
 
 .meat {
   max-width: 80wv;
-  margin: 2rem 7rem 1rem 10rem;
+  margin: 2rem auto 1rem 10rem;
 }
 
 /* Remember the link attributes have to be in the correct order (link, visited, hover, and active) to operate correctly. */
@@ -346,6 +391,7 @@ a.navlist:visited {
   width: 20rem;
   box-shadow: 2px 6px 15px red;
 }
+
 #tetris {
   max-width: 20rem;
 }
@@ -372,7 +418,7 @@ figcaption {
   align-items: center;
   align-self: center;
   min-width: 25vw;
-  min-height: 3rem;
+  /* min-height: 3rem; */
   margin: 0rem;
   border-style: double;
 }
@@ -399,6 +445,7 @@ figcaption {
   font-size: 1rem;
   font-style: normal;
 }
+
 #backToTop {
   position: relative;
   bottom: -3rem;
@@ -415,7 +462,8 @@ figcaption {
 }
 
 #content-wrap {
-  padding-bottom: 5rem; /* Footer height */
+  padding-bottom: 5rem;
+  /* Footer height */
   box-shadow: 2px 1px 5px rgba(255, 0, 0, 0.404);
 }
 
@@ -425,7 +473,8 @@ figcaption {
   text-align: center;
   bottom: 0;
   width: 100%;
-  height: 0rem; /* Footer height */
+  height: 0rem;
+  /* Footer height */
 }
 
 /* Form formatting */
@@ -440,6 +489,7 @@ form.form1 legend {
   font-size: 0.8rem;
   color: #e6000f;
 }
+
 form.form1 label {
   display: block;
 }
@@ -484,9 +534,11 @@ form.form1 .submitButton {
 #selector {
   width: 300px;
 }
+
 /* Here for iframe setup */
-.framed{
-  width:100%;
-  height: 20rem;
-  margin: 0 auto;
+.framed {
+  width: 100%;
+  height: 27rem;
+  margin: 10px auto;
+  align-items: center;
 }
