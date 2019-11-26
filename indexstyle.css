@@ -223,7 +223,8 @@ header {
 
   #mapFrame,
   #videoFrame {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .meat {
@@ -541,4 +542,37 @@ form.form1 .submitButton {
   height: 27rem;
   margin: 10px auto;
   align-items: center;
+  border: none;
+}
+
+/* Table setup */
+table.aTable{
+  margin-top: 1rem;
+  border-collapse: collapse;
+  box-shadow: 2px 2px 10px #96846b;
+  width: 90%;
+  margin-left: 5%;
+}
+
+table.aTable th {
+  background-color: #e6000f;
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-align: left;
+  border-left: solid 1px #f1eeeb;
+
+}
+
+table.aTable td {
+  padding: .5rem;
+  border-left: solid 1px #f1eeeb;
+}
+
+
+table.aTable tr:nth-child(even) {
+  background-color: #9e9a93;
+}
+
+table.aTable tr:hover{
+  background-color: #4e51f3;
 }
