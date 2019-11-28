@@ -22,6 +22,7 @@ header {
   width: 39rem;
 }
 
+
 .ul1 li {
   list-style-type: none;
   background: url(./assets/Play.png) top left no-repeat;
@@ -235,6 +236,11 @@ header {
   .mobileHeading {
     margin-left: 2rem;
   }
+  table.aTable { 
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  
 }
 
 ul {
@@ -546,12 +552,11 @@ form.form1 .submitButton {
 }
 
 /* Table setup */
-table.aTable{
+table.aTable {
   margin-top: 1rem;
   border-collapse: collapse;
   box-shadow: 2px 2px 10px #96846b;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
 }
 
 table.aTable th {
@@ -560,7 +565,6 @@ table.aTable th {
   font-size: 1.2rem;
   text-align: left;
   border-left: solid 1px #f1eeeb;
-
 }
 
 table.aTable td {
@@ -568,11 +572,10 @@ table.aTable td {
   border-left: solid 1px #f1eeeb;
 }
 
-
 table.aTable tr:nth-child(even) {
   background-color: #9e9a93;
 }
 
-table.aTable tr:hover{
+table.aTable tr:hover {
   background-color: #4e51f3;
 }
